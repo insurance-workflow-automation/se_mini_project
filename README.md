@@ -1,97 +1,60 @@
-# Insurance Workflow Automation System
+# Insurance Workflow — frontend demonstration
 
-**Team 07 \| SRS v1.1 \| Status: Proposed academic prototype**
+Six-page academic demo using Vite, plain HTML, CSS and JavaScript.
+Initial scaffold only: all HTML bodies, shared CSS and shared JS are EMPTY.
+There is no backend, real authentication, database or insurance processing.
+Older SRS/SAD/test-plan files remain references, not delivered scope.
+Current scope: docs/frontend-plan.txt; approved dates below supersede its old dates.
 
-## Overview
+## Setup
 
-The Insurance Workflow Automation System is a proposed browser-based
-prototype for managing insurance applications and claims from draft
-creation through document verification, staff assessment, and an
-approval or rejection decision. It is intended to demonstrate role-based
-access, workflow state transitions, status history, notifications, and
-auditability.
+Use Node.js 22.12 or newer. CI uses Node 22.
 
-The SRS is a proposed specification and stakeholder approval is pending.
-This README describes the intended scope; it does not claim the
-application is implemented.
+    npm ci
+    npm run dev
+    npm run build
+    npm run preview
 
-## Scope
+Open /index.html, /login.html, /dashboard.html, /application.html,
+/applications.html and /staff.html. Initially each page is intentionally blank.
+Build output must include all six pages. Build success verifies bundling,
+not application features or simulated interactions.
 
-The prototype scope includes provisioned user accounts, application and
-claim drafts, private documents, verification, role-based queues,
-assessments, decisions, notifications, and audit trails. Policy records
-are intended to be seeded read-only reference data for claims.
+## Ownership
 
-Out of scope for this release: policy issuance, premium collection,
-claim payout, actuarial pricing, fraud adjudication, OCR-based
-decisions, and live insurer integrations.
+- Anuj: scaffold, index.html, Jira, reviews, integration, charts and presentation.
+- Renetta: login.html, dashboard.html, application.html, applications.html.
+- Aswin: staff.html and agreed staff interactions.
+- Raghav: css/style.css, js/main.js and manual frontend checks.
 
-## Roles
+Coordinate shared-file edits with Raghav. Use only synthetic demo data.
 
--   Applicant
--   Verifier
--   Processor
--   Approver
--   Administrator
--   Auditor
+## Branch and PR policy
 
-Access must be enforced server-side based on role, ownership, and
-assignment. Administrator status does not automatically grant approval
-rights or unrestricted access to documents.
+1. Take an assigned Jira issue and acceptance criteria before coding.
+2. Pull latest main, then create feat/IWM-12-login-page (use the actual key).
+3. Edit assigned files; run npm run build and check affected pages in a browser.
+4. Commit with the issue key, e.g. IWM-12: create login page; push the branch.
+5. Open a PR with key, purpose, files, real results and screenshots once UI exists.
+6. Anuj reviews teammates' changes. Another contributor reviews Anuj's changes.
+7. Merge only after passing checks and review; no direct feature pushes to main.
+8. Record actual Jira transitions: To Do, In Progress, In Review, Done.
 
-## Requirements and design documents
+If Anuj takes over missing work, record original owner, reassignment reason,
+actual author and dates. Do not impersonate a teammate or invent approval.
+Do not bypass branch review requirements to self-merge.
 
--   `Insurance_Workflow_SRS.docx` --- requirements baseline.
--   `docs/requirements-baseline.md` --- requirements relevant to the
-    first demonstrable workflow.
--   `docs/mvp-acceptance-criteria.md` --- proposed acceptance criteria.
--   `docs/roles-and-permissions.md` --- role responsibilities and
-    restrictions.
--   `docs/auth-session-contract.md` --- proposed authentication/session
-    contract.
--   `docs/application-validation-contract.md` --- proposed application
-    validation contract.
+## Sprint plan
 
-## Technology stack and setup
+Sprint 1: 2–6 November 2026, Days 1–5: setup, page plans, landing/login,
+dashboard, application form.
+Sprint 2: 9–13 November 2026, Days 6–10: applications list, staff demo,
+optional browser-only JS, integration and final presentation.
+No mandatory weekend work. Record setup before sprint start as pre-sprint work.
 
-The SRS and execution plan describe candidate technologies, not an
-already verified implementation. Confirm the actual stack and versions
-with the team and record the decision before adding installation
-commands. Do not assume that proposed FastAPI, PostgreSQL, or frontend
-components are already present.
+## Evidence and charts
 
-Setup and test commands will be documented after the repository's actual
-implementation and dependencies are verified.
-
-## Test status
-
-The SRS maps 31 requirements to 37 planned test cases. Those tests are
-planned, not reported as executed. Add test commands, CI status,
-coverage, and results here only after they have been run and verified.
-
-## Development workflow
-
-1.  Create or identify a Jira issue with acceptance criteria before
-    starting work.
-2.  Use a feature branch named for the Jira issue.
-3.  Commit logical changes and push the branch.
-4.  Open a pull request with a summary, issue link, and genuine test
-    evidence.
-5.  Require a passing CI check and another contributor's review before
-    merging.
-6.  Record unresolved requirements and defects rather than marking them
-    complete without evidence.
-
-## Data and security
-
-Use synthetic personal data for demonstrations. Do not commit
-credentials, session secrets, real policyholder data, or private
-documents. The SRS requires protected transport, server-side
-authorization, safe input handling, private document storage, and
-auditable workflow transitions.
-
-## Project status
-
-Requirements documentation is under review. Stakeholder approvals,
-implementation verification, and planned test execution remain pending
-until supported by recorded evidence.
+See docs/daily-evidence.md. Freeze estimates at actual sprint start.
+Keep scope changes and reassignment visible. Final charts show genuine
+planned/completed points, burndown, velocity and planned/actual Gantt.
+Never backdate transitions or invent missing observations.

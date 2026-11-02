@@ -1,0 +1,288 @@
+{
+  "capturedDate": "2026-10-31",
+  "kind": "provisional planning baseline; freeze again at actual sprint start",
+  "sprint1": {
+    "id": 72,
+    "start": "2026-11-02",
+    "end": "2026-11-06"
+  },
+  "sprint2": {
+    "id": 73,
+    "start": "2026-11-09",
+    "end": "2026-11-13"
+  },
+  "tasks": [
+    {
+      "owner": "Anuj",
+      "day": 1,
+      "points": 3,
+      "summary": "Initialise six-page blank Vite scaffold",
+      "key": "IWM-6",
+      "plannedDate": "2026-11-02"
+    },
+    {
+      "owner": "Renetta",
+      "day": 1,
+      "points": 1,
+      "summary": "Verify applicant-page local setup",
+      "key": "IWM-7",
+      "plannedDate": "2026-11-02"
+    },
+    {
+      "owner": "Aswin",
+      "day": 1,
+      "points": 1,
+      "summary": "Verify staff-page local setup",
+      "key": "IWM-8",
+      "plannedDate": "2026-11-02"
+    },
+    {
+      "owner": "Raghav",
+      "day": 1,
+      "points": 1,
+      "summary": "Verify shared assets and local build",
+      "key": "IWM-9",
+      "plannedDate": "2026-11-02"
+    },
+    {
+      "owner": "Renetta",
+      "day": 2,
+      "points": 2,
+      "summary": "Plan applicant pages and navigation",
+      "key": "IWM-10",
+      "plannedDate": "2026-11-03"
+    },
+    {
+      "owner": "Aswin",
+      "day": 2,
+      "points": 1,
+      "summary": "Plan staff review screen",
+      "key": "IWM-11",
+      "plannedDate": "2026-11-03"
+    },
+    {
+      "owner": "Raghav",
+      "day": 2,
+      "points": 2,
+      "summary": "Define visual conventions and manual checklist",
+      "key": "IWM-12",
+      "plannedDate": "2026-11-03"
+    },
+    {
+      "owner": "Anuj",
+      "day": 3,
+      "points": 2,
+      "summary": "Build landing page and demo navigation",
+      "key": "IWM-13",
+      "plannedDate": "2026-11-04"
+    },
+    {
+      "owner": "Renetta",
+      "day": 3,
+      "points": 2,
+      "summary": "Build demo login page markup",
+      "key": "IWM-14",
+      "plannedDate": "2026-11-04"
+    },
+    {
+      "owner": "Raghav",
+      "day": 3,
+      "points": 2,
+      "summary": "Add shared CSS base for landing and login",
+      "key": "IWM-15",
+      "plannedDate": "2026-11-04"
+    },
+    {
+      "owner": "Renetta",
+      "day": 4,
+      "points": 2,
+      "summary": "Build applicant dashboard",
+      "key": "IWM-16",
+      "plannedDate": "2026-11-05"
+    },
+    {
+      "owner": "Aswin",
+      "day": 4,
+      "points": 1,
+      "summary": "Outline staff page information",
+      "key": "IWM-17",
+      "plannedDate": "2026-11-05"
+    },
+    {
+      "owner": "Raghav",
+      "day": 4,
+      "points": 1,
+      "summary": "Check dashboard layout and keyboard access",
+      "key": "IWM-18",
+      "plannedDate": "2026-11-05"
+    },
+    {
+      "owner": "Renetta",
+      "day": 5,
+      "points": 3,
+      "summary": "Build demo application form",
+      "key": "IWM-19",
+      "plannedDate": "2026-11-06"
+    },
+    {
+      "owner": "Raghav",
+      "day": 5,
+      "points": 1,
+      "summary": "Check form layout and validation presentation",
+      "key": "IWM-20",
+      "plannedDate": "2026-11-06"
+    },
+    {
+      "owner": "Anuj",
+      "day": 5,
+      "points": 2,
+      "summary": "Review Sprint 1 integration and closeout",
+      "key": "IWM-21",
+      "plannedDate": "2026-11-06"
+    },
+    {
+      "owner": "Renetta",
+      "day": 6,
+      "points": 3,
+      "summary": "Build My Applications demo list",
+      "key": "IWM-22",
+      "plannedDate": "2026-11-09"
+    },
+    {
+      "owner": "Anuj",
+      "day": 6,
+      "points": 1,
+      "summary": "Choose and document frontend demo state",
+      "key": "IWM-23",
+      "plannedDate": "2026-11-09"
+    },
+    {
+      "owner": "Raghav",
+      "day": 6,
+      "points": 1,
+      "summary": "Style and check applications list",
+      "key": "IWM-24",
+      "plannedDate": "2026-11-09"
+    },
+    {
+      "owner": "Aswin",
+      "day": 7,
+      "points": 3,
+      "summary": "Build staff review demo page",
+      "key": "IWM-25",
+      "plannedDate": "2026-11-10"
+    },
+    {
+      "owner": "Renetta",
+      "day": 7,
+      "points": 1,
+      "summary": "Fix applicant cross-page links",
+      "key": "IWM-26",
+      "plannedDate": "2026-11-10"
+    },
+    {
+      "owner": "Raghav",
+      "day": 7,
+      "points": 1,
+      "summary": "Check staff styling and accessibility",
+      "key": "IWM-27",
+      "plannedDate": "2026-11-10"
+    },
+    {
+      "owner": "Anuj",
+      "day": 8,
+      "points": 1,
+      "summary": "Decide optional demo behavior scope",
+      "key": "IWM-28",
+      "plannedDate": "2026-11-11"
+    },
+    {
+      "owner": "Raghav",
+      "day": 8,
+      "points": 3,
+      "summary": "Implement optional coordinated browser-only interactions",
+      "key": "IWM-29",
+      "plannedDate": "2026-11-11"
+    },
+    {
+      "owner": "Renetta",
+      "day": 8,
+      "points": 1,
+      "summary": "Coordinate optional applicant confirmation UI",
+      "key": "IWM-30",
+      "plannedDate": "2026-11-11"
+    },
+    {
+      "owner": "Aswin",
+      "day": 8,
+      "points": 1,
+      "summary": "Coordinate optional staff status interactions",
+      "key": "IWM-31",
+      "plannedDate": "2026-11-11"
+    },
+    {
+      "owner": "Anuj",
+      "day": 9,
+      "points": 3,
+      "summary": "Integrate and review six-page frontend",
+      "key": "IWM-32",
+      "plannedDate": "2026-11-12"
+    },
+    {
+      "owner": "Renetta",
+      "day": 9,
+      "points": 2,
+      "summary": "Verify and fix integrated applicant pages",
+      "key": "IWM-33",
+      "plannedDate": "2026-11-12"
+    },
+    {
+      "owner": "Aswin",
+      "day": 9,
+      "points": 2,
+      "summary": "Verify and fix integrated staff page",
+      "key": "IWM-34",
+      "plannedDate": "2026-11-12"
+    },
+    {
+      "owner": "Raghav",
+      "day": 9,
+      "points": 3,
+      "summary": "Execute six-page manual test checklist",
+      "key": "IWM-35",
+      "plannedDate": "2026-11-12"
+    },
+    {
+      "owner": "Anuj",
+      "day": 10,
+      "points": 3,
+      "summary": "Present demo, sprint charts and planned/actual Gantt",
+      "key": "IWM-36",
+      "plannedDate": "2026-11-13"
+    },
+    {
+      "owner": "Renetta",
+      "day": 10,
+      "points": 1,
+      "summary": "Demonstrate applicant frontend",
+      "key": "IWM-37",
+      "plannedDate": "2026-11-13"
+    },
+    {
+      "owner": "Aswin",
+      "day": 10,
+      "points": 1,
+      "summary": "Demonstrate staff frontend",
+      "key": "IWM-38",
+      "plannedDate": "2026-11-13"
+    },
+    {
+      "owner": "Raghav",
+      "day": 10,
+      "points": 1,
+      "summary": "Present test evidence and verify README",
+      "key": "IWM-39",
+      "plannedDate": "2026-11-13"
+    }
+  ]
+}

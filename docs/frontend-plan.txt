@@ -1,0 +1,437 @@
+INSURANCE WORKFLOW MANAGEMENT SYSTEM
+FRONTEND-ONLY TEAM PROJECT — DETAILED 10-WORKDAY PLAN
+====================================================
+
+PROJECT TYPE: Very simple multi-page website (academic demonstration)
+OWNER / MERGE REVIEWER: Anuj
+TEAM: Anuj, Renetta, Aswin, Raghav
+PLANNED SPRINT: 27 October–9 November 2026
+WORKDAYS: Oct 27, 28, 29, 30; Nov 2, 3, 4, 5, 6, 9
+NO MANDATORY WEEKEND WORK: Oct 31–Nov 1; Nov 7–8
+
+NOTE ON DATES: This is a planning reference, not a claim that any past-day
+work was completed. Record real completion dates and evidence in Jira.
+
+1. SCOPE AND NON-GOALS
+----------------------
+Build a small multi-page, frontend-only insurance workflow *demonstration*.
+Use Node.js only to run Vite's development/build tooling. The browser runs
+plain HTML, CSS, and JavaScript. NO Node.js application server is needed.
+
+Stack: Node.js + Vite + plain HTML + plain CSS + vanilla JavaScript.
+No React, Express, TypeScript, Flask, database, real authentication, API,
+file storage, emails, payment, deployment infrastructure, or Docker.
+
+Important distinction:
+- FIRST, Codex sets up only the scaffold. All HTML <body> elements remain
+  EMPTY; CSS and JS remain EMPTY. No visible UI, mock data or page content.
+- THEN, team members implement frontend pages in their own PRs over the sprint.
+- Any login, application status, or approval behavior is visual/simulated,
+  NOT secure or persistent server-side insurance processing.
+- Do not describe a simulated feature as a functioning backend feature.
+
+Pages to exist in the scaffold:
+  index.html             (landing / navigation, to be built later)
+  login.html             (demo sign-in screen, later)
+  dashboard.html         (overview, later)
+  application.html       (new application form, later)
+  applications.html      (applications list, later)
+  staff.html             (staff review screen, later)
+
+Expected repository:
+  index.html
+  login.html
+  dashboard.html
+  application.html
+  applications.html
+  staff.html
+  css/style.css
+  js/main.js
+  package.json
+  package-lock.json
+  vite.config.js         (for six-page build)
+  .gitignore
+  README.md
+
+2. TEAM OWNERSHIP (STARTING ALLOCATION)
+--------------------------------------
+Anuj: repository structure, Vite, GitHub/Jira setup, review/merge,
+       index.html, integration and final demo.
+Renetta: login.html, dashboard.html, application.html, applications.html.
+Aswin: staff.html, review-page interactions limited to assigned code.
+Raghav: css/style.css, js/main.js, manual frontend checks.
+
+IMPORTANT: Shared css/style.css and js/main.js can cause bottlenecks.
+Contributors needing changes to these files should coordinate with Raghav
+or request an extra per-page CSS/JS file in a separate approved PR.
+No one should directly push feature changes to main.
+
+3. SIMPLE COLLABORATION RULES
+-----------------------------
+A. Anuj creates the GitHub repo and grants collaborators appropriate access.
+B. Anuj creates or assigns a Jira issue BEFORE work begins.
+C. Each contributor creates a new branch from up-to-date main, e.g.:
+      git switch main
+      git pull
+      git switch -c feat/IWM-12-login-page
+   Replace IWM-12 with the real Jira issue key.
+D. Contributor edits ONLY the files needed for the assigned task.
+E. Contributor tests the change locally:
+      npm install       (first setup only)
+      npm run dev
+      npm run build
+F. Contributor commits and pushes:
+      git add <specific-files>
+      git commit -m "IWM-12: create login page"
+      git push -u origin feat/IWM-12-login-page
+G. Contributor opens a PR describing purpose, touched files, how tested,
+   and screenshots once the page contains UI.
+H. Anuj reads the Files changed tab, checks scope, runs build, requests
+   corrections when necessary, and merges only after a genuine review.
+I. Jira: To Do -> In Progress -> In Review -> Done, as evidence supports.
+J. Protect main with PR review requirements where repository settings permit.
+   GitHub configuration and access must be done separately from scaffolding.
+
+Every day record: Jira issue key, owner, branch, commit SHA, PR link,
+reviewer, build result, actual progress, blockers, and next step.
+Do not invent commits, CI outcomes, screenshots, or completed tasks.
+
+4. DETAILED DAY-BY-DAY PLAN
+===========================
+
+DAY 1 — TUESDAY 27 OCTOBER — REPOSITORY + BLANK SCAFFOLD
+-------------------------------------------------------
+OBJECTIVE: A minimal runnable Vite multi-page project with NO page content.
+
+Anuj:
+  1. Create/confirm GitHub repository and Jira project.
+  2. Invite Renetta, Aswin, Raghav to the GitHub repository and Jira.
+  3. Run Codex with the scaffold-only prompt already defined for this project.
+  4. Verify exactly six HTML files and a shared blank CSS and JS file.
+  5. Confirm each HTML file has HTML boilerplate, an empty <body>, a CSS
+     reference and JS reference; no UI text, forms, buttons or navigation.
+  6. Confirm Vite builds all six pages via minimal vite.config.js.
+  7. Keep the source readable and leave existing files undisturbed.
+  8. Review and commit the scaffold; push to main as an initial setup commit
+     if the repository policy permits initial bootstrap.
+
+Renetta:
+  1. Read README and locate four assigned HTML files.
+  2. Confirm Node.js/npm works locally and clone the repository.
+  3. Do not add interface elements on the scaffold day.
+
+Aswin:
+  1. Clone the repo; verify staff.html loads as a blank page.
+  2. Note what staff review information will be needed later.
+  3. Do not add any content yet.
+
+Raghav:
+  1. Confirm blank css/style.css and js/main.js exist.
+  2. Run npm install, npm run dev and npm run build.
+  3. Document any reproducible setup errors.
+
+Suggested Jira tasks:
+  - Initialise Vite multi-page scaffold (Anuj)
+  - Verify local repository setup (each contributor)
+  - Confirm development workflow and assignments (Anuj)
+
+DONE WHEN:
+  - npm run dev serves the six EMPTY pages.
+  - npm run build succeeds and includes the six HTML pages.
+  - No functional insurance UI exists yet.
+  - All four members can access the repository and know their files.
+
+DAY 2 — WEDNESDAY 28 OCTOBER — COLLABORATION PRACTICE + PAGE PLANS
+----------------------------------------------------------------
+OBJECTIVE: Confirm everyone can contribute safely without mixing changes.
+
+Anuj:
+  1. Create Jira issues with clear one-page acceptance criteria.
+  2. Document branch/commit/PR steps in README.
+  3. Set main-branch protection or ruleset when supported.
+  4. Assign page ownership and explain how reviews work.
+  5. Plan basic cross-page navigation without implementing it yet.
+
+Renetta:
+  1. Plan the form fields and structure for applicant pages.
+  2. Identify which page links to which, and note this in the Jira task.
+  3. Demonstrate branching with a documentation-only change if useful.
+
+Aswin:
+  1. Specify the staff page's minimum controls: pending list, details,
+     approve and reject (future demo behaviors only).
+  2. Identify what data is display-only.
+
+Raghav:
+  1. Agree on one simple visual convention (spacing, typography).
+  2. Make a short manual test checklist: URLs resolve, links work,
+     pages are readable, no browser console errors, npm run build passes.
+
+DONE WHEN:
+  - Jira task list is clear, individual ownership is agreed.
+  - At least one genuine trial PR has been reviewed where practical.
+  - No backend, database, or fake production authentication is planned.
+
+DAY 3 — THURSDAY 29 OCTOBER — LANDING + LOGIN PAGE MARKUP
+-------------------------------------------------------
+OBJECTIVE: First two small, readable HTML screens.
+
+Anuj:
+  1. Build a minimal index.html landing page with links to applicant and
+     staff demo routes; no complex design or business logic.
+  2. Review Renetta's login-page PR without editing her branch directly.
+
+Renetta:
+  1. Add login.html markup with demo username, demo password fields,
+     a sign-in button and a clear 'Demo only' notice.
+  2. Do NOT implement or claim secure real login.
+  3. Keep markup semantic: label, input and button elements.
+  4. Submit a focused PR containing only the assigned page.
+
+Aswin:
+  1. Review proposed staff page information for clarity.
+  2. Avoid modifying applicant files.
+
+Raghav:
+  1. Add a small shared CSS base: readable fonts, margins, form controls.
+  2. Avoid frameworks and elaborate effects.
+  3. Verify landing/login pages at desktop and narrow viewport.
+
+DONE WHEN:
+  - index.html and login.html have minimal static markup.
+  - Other pages may still be empty.
+  - Review comments, if any, are addressed before merge.
+
+DAY 4 — FRIDAY 30 OCTOBER — APPLICANT DASHBOARD
+------------------------------------------------
+OBJECTIVE: Build a simple applicant overview screen.
+
+Anuj:
+  1. Ensure navigation routes point to actual HTML filenames.
+  2. Review dashboard changes and check for broken links.
+
+Renetta:
+  1. Implement dashboard.html: page title, navigation and simple links
+     to start an application or view applications.
+  2. Show an explicitly labeled static demonstration status area if useful.
+  3. Do not introduce backend calls or real user-specific data.
+  4. Open PR with screenshots and exact manual checks.
+
+Aswin:
+  1. Build a short outline for staff.html but keep its edits separate.
+
+Raghav:
+  1. Add minimal layout styling for the dashboard, if needed.
+  2. Confirm keyboard tab order and readable link text.
+
+DONE WHEN:
+  - Dashboard loads and links to the correct pages.
+  - All visible status information is clearly demo content.
+
+WEEKEND — SAT 31 OCTOBER / SUN 1 NOVEMBER
+---------------------------------------
+No mandatory implementation. Review pending PRs only if volunteers choose.
+Keep actual Jira dates accurate; do not backfill fictitious activity.
+
+DAY 5 — MONDAY 2 NOVEMBER — NEW APPLICATION FORM
+------------------------------------------------
+OBJECTIVE: Build a single static insurance application form.
+
+Anuj:
+  1. Review fields for simplicity and consistency with project scope.
+  2. Check that app links from dashboard to application.html correctly.
+
+Renetta:
+  1. Implement application.html with only essential demo fields:
+     applicant name, insurance type, contact field, and requested amount.
+  2. Use HTML required attributes and sensible input types.
+  3. Add a clear submit control. Initially the form may be UI-only.
+  4. Add a note that no real policy/application is being processed.
+  5. Submit PR with manual input checks and screenshot.
+
+Aswin:
+  1. Confirm staff page can later display the same basic fields.
+
+Raghav:
+  1. Provide form spacing and legible validation styling.
+  2. Check basic keyboard navigation and small-screen readability.
+
+DONE WHEN:
+  - Form appears and accepts input in the browser.
+  - Client-side field requirements are visible.
+  - No claim is made that data reached a database or insurer.
+
+DAY 6 — TUESDAY 3 NOVEMBER — MY APPLICATIONS PAGE
+------------------------------------------------
+OBJECTIVE: Show a minimal applicant tracking page.
+
+Anuj:
+  1. Review application list information and its links.
+  2. Decide whether to use entirely static data or small browser-only mock
+     state; document the decision, avoiding extra infrastructure.
+
+Renetta:
+  1. Build applications.html: a simple table or cards.
+  2. Include example ID, insurance type, and status with DEMO labels.
+  3. Provide an empty-state message if using browser-only data.
+  4. Keep layout and PR limited to the assigned page.
+
+Aswin:
+  1. Prepare staff view using the same demo status terminology.
+
+Raghav:
+  1. Add small shared table/card styling if required.
+  2. Test navigation between new application and applications list.
+
+DONE WHEN:
+  - Applicants can open the tracking page and understand its columns.
+  - There is no false promise of server-side persistence.
+
+DAY 7 — WEDNESDAY 4 NOVEMBER — STAFF PAGE
+----------------------------------------
+OBJECTIVE: Simple staff review UI.
+
+Anuj:
+  1. Review Aswin's staff page; ensure shared page links work.
+  2. Check that staff and applicant pages are labeled as demo screens.
+
+Renetta:
+  1. Fix any cross-page link issues in her own files via a PR.
+
+Aswin:
+  1. Implement staff.html with a basic list of demo submissions.
+  2. Show applicant name, type, amount and status.
+  3. Include approve/reject buttons as visible UI controls.
+  4. If behavior is not yet implemented, explicitly label controls as
+     illustrative or leave them non-functional until Day 8.
+  5. Submit focused PR with screenshots and reproduction steps.
+
+Raghav:
+  1. Support minimal staff-page styling via a separate PR.
+  2. Check contrast, labels, and narrow viewport layout.
+
+DONE WHEN:
+  - Staff page is usable as a static demo.
+  - No backend access controls or true approval processing are claimed.
+
+DAY 8 — THURSDAY 5 NOVEMBER — OPTIONAL SIMPLE FRONTEND BEHAVIOR
+--------------------------------------------------------------
+OBJECTIVE: Only if the team has capacity, connect pages with tiny JS demos.
+
+Anuj:
+  1. Choose one consistent demo behavior instead of adding more features.
+  2. Review JavaScript changes for clarity and absence of backend claims.
+
+Renetta:
+  1. If approved, make a form action show a confirmation message or
+     redirect to applications.html; clarify whether it saves anything.
+  2. Do not add authentication, APIs, or server submission.
+
+Aswin:
+  1. If approved, make approve/reject buttons update a visible demo status.
+  2. Keep the interaction browser-only and label it simulated.
+
+Raghav:
+  1. Implement the smallest possible JS in js/main.js, coordinating with
+     Renetta/Aswin so they do not edit the same shared JS simultaneously.
+  2. OPTIONAL: use localStorage for mock state only if the team really needs
+     a browser-refresh demo. It is not secure or multi-user storage.
+  3. Test that scripts do not error on pages missing a given control.
+
+DONE WHEN:
+  - Intended demo interactions work, or stay explicitly static.
+  - No feature relies on a backend; no sensitive real data is stored.
+
+DAY 9 — FRIDAY 6 NOVEMBER — INTEGRATION AND MANUAL TESTING
+---------------------------------------------------------
+OBJECTIVE: Stabilize the six-page website and merge reviewed work.
+
+Anuj:
+  1. Review open PRs and merge only those meeting acceptance criteria.
+  2. Pull latest main on a clean checkout and run npm install, npm run dev,
+     and npm run build.
+  3. Verify all six URLs load without a browser error.
+  4. Record unresolved bugs in Jira rather than hiding them.
+
+Renetta:
+  1. Fix applicant-page layout, form and navigation issues.
+  2. Recheck all four owned pages after integration.
+
+Aswin:
+  1. Verify staff page renders and demo actions behave as labeled.
+  2. Fix staff-page bugs using a new branch/PR.
+
+Raghav:
+  1. Run manual checklist for each page.
+  2. Check mobile layout, keyboard navigation, missing assets and console.
+  3. Verify CSS/JS changes do not break unrelated pages.
+
+DONE WHEN:
+  - Six pages load and links connect correctly.
+  - Production build succeeds.
+  - Open issues are documented with honest statuses.
+
+WEEKEND — SAT 7 NOVEMBER / SUN 8 NOVEMBER
+---------------------------------------
+No mandatory tasks; do not silently expand the sprint.
+
+DAY 10 — MONDAY 9 NOVEMBER — FINAL REVIEW + DEMONSTRATION
+-------------------------------------------------------
+OBJECTIVE: Demonstrate the simple frontend and collaborative workflow.
+
+Anuj:
+  1. Check all planned PRs have been reviewed and either merged or left open
+     with reasons recorded.
+  2. Run the project from clean checkout and record commands and results.
+  3. Prepare a short route-by-route demo and show Jira/PR/commit history.
+  4. If release criteria are met, optionally tag the reviewed commit.
+  5. Distinguish delivered frontend features from unimplemented SRS features.
+
+Renetta:
+  1. Demo applicant-facing pages and form UI.
+  2. Explain any simulated action clearly.
+
+Aswin:
+  1. Demo staff.html and its static/simulated review behavior.
+
+Raghav:
+  1. Present manual test checklist and actual pass/fail evidence.
+  2. Confirm README setup instructions match the final repository.
+
+DONE WHEN:
+  - A fresh clone can install and run with documented commands.
+  - Six pages are shown; their real implemented state is understood.
+  - Jira tasks/PRs show genuine contributions and Anuj's review process.
+  - Known gaps and next steps are recorded.
+
+5. ACCEPTANCE CHECKLIST
+-----------------------
+[ ] Node.js + Vite only; no application backend.
+[ ] Six separate HTML entry pages.
+[ ] Plain HTML, CSS, JavaScript (no framework).
+[ ] Initial scaffold was blank before feature PRs.
+[ ] npm run dev works.
+[ ] npm run build works and includes six pages.
+[ ] Each contributor's code was developed on a feature branch.
+[ ] Pull requests were reviewed before merge.
+[ ] No simulated login, approval, or storage described as secure/real.
+[ ] Jira reflects actual progress and remaining work.
+[ ] README tells new contributors exactly how to start and submit a PR.
+
+6. DAY-TO-DAY REPORT TEMPLATE (COPY INTO JIRA)
+-----------------------------------------------
+Date:
+Contributor:
+Assigned Jira issue:
+What actually changed:
+Files modified:
+Branch:
+Commit SHA:
+PR URL:
+Review status / reviewer:
+npm run build result:
+Manual browser check:
+Blocker:
+Next action:
+
+END OF PLAN
