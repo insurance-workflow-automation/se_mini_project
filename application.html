@@ -3,9 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Workflow</title>
+    <title>Demo application | Insurance Workflow</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/main.js">
+    </script>
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+    <a class="brand" href="index.html">Insurance Workflow <span>Demo</span>
+    </a>
+      <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="application.html">New application</a>
+    </nav>
+    </header>
+    <main id="main" class="narrow">
+    <p class="eyebrow">Practice form</p>
+    <h1>New demo application</h1>
+    <p id="form-note" class="notice">Use fictional details only. No real policy or application is processed. Entries are not sent or saved.</p>
+    <p>All fields are required.</p>
+    <form data-demo-form="application" aria-describedby="form-note">
+    <div class="field">
+    <label for="applicant-name">Applicant name</label>
+    <input id="applicant-name" type="text" autocomplete="off" maxlength="100" required>
+    </div>
+    <div class="field">
+    <label for="insurance-type">Insurance type</label>
+    <select id="insurance-type" required>
+    <option value="">Choose a type</option>
+    <option value="health">Health</option>
+    <option value="vehicle">Vehicle</option>
+    <option value="home">Home</option>
+    </select>
+    </div>
+    <div class="field">
+    <label for="contact-email">Contact email</label>
+    <input id="contact-email" type="email" autocomplete="off" placeholder="applicant@example.com" required>
+    </div>
+    <div class="field">
+    <label for="requested-amount">Requested amount (INR)</label>
+    <input id="requested-amount" type="number" min="1" step="1" required aria-describedby="amount-help">
+    <small id="amount-help">Enter a positive whole number for this demo.</small>
+    </div>
+    <button type="submit">Check demo application</button>
+    <p data-result role="status"></p>
+    </form>
+    <p>
+    <a href="dashboard.html">Back to dashboard</a>
+    </p>
+    </main>
+    <footer>Academic frontend demo · No real insurance processing</footer>
+  </body>
 </html>

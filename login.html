@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Workflow</title>
+    <title>Demo sign-in | Insurance Workflow</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/main.js">
+    </script>
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+    <a class="brand" href="index.html">Insurance Workflow <span>Demo</span>
+    </a>
+      <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="application.html">New application</a>
+    </nav>
+    </header>
+    <main id="main" class="narrow">
+    <p class="eyebrow">Demo only</p>
+    <h1>Preview sign-in</h1>
+    <p>No account is required. Do not enter a real username or password.</p>
+    <form data-demo-form="login">
+    <div class="field">
+    <label for="demo-username">Demo username</label>
+    <input id="demo-username" type="text" placeholder="demo-applicant" autocomplete="off" required>
+    </div>
+    <div class="field">
+    <label for="demo-password">Demo password</label>
+    <input id="demo-password" type="password" placeholder="Use a fictional value" autocomplete="off" required>
+    </div>
+    <p id="login-note" class="notice">This form only demonstrates browser validation. It does not authenticate or send credentials.</p>
+    <button type="submit" aria-describedby="login-note">Try demo sign-in</button>
+    <p data-result role="status"></p>
+    </form>
+    <a href="dashboard.html">Continue to the demo dashboard without signing in</a>
+    </main>
+    <footer>Academic frontend demo · No real insurance processing</footer>
+  </body>
 </html>

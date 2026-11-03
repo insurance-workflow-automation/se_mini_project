@@ -1,0 +1,66 @@
+
+> insurance-workflow-frontend@0.1.0 test:coverage
+> node --test --experimental-test-coverage --test-coverage-include=js/demo-forms.js tests/frontend.test.js
+
+TAP version 13
+# Subtest: FE-01: all internal links in delivered pages resolve to repository pages or anchors
+ok 1 - FE-01: all internal links in delivered pages resolve to repository pages or anchors
+  ---
+  duration_ms: 1160.3919
+  ...
+# Subtest: FE-02: application fields are labelled and required
+ok 2 - FE-02: application fields are labelled and required
+  ---
+  duration_ms: 123.744
+  ...
+# Subtest: FE-03: email validity rejects malformed input and accepts demo email
+ok 3 - FE-03: email validity rejects malformed input and accepts demo email
+  ---
+  duration_ms: 75.4492
+  ...
+# Subtest: FE-04: amount rejects zero, negative and fractional values
+ok 4 - FE-04: amount rejects zero, negative and fractional values
+  ---
+  duration_ms: 92.7574
+  ...
+# Subtest: FE-05: valid application submit is cancelled with an honest non-persistence notice
+ok 5 - FE-05: valid application submit is cancelled with an honest non-persistence notice
+  ---
+  duration_ms: 131.976
+  ...
+# Subtest: FE-06: login does not authenticate or echo entered credentials
+ok 6 - FE-06: login does not authenticate or echo entered credentials
+  ---
+  duration_ms: 82.369
+  ...
+# Subtest: FE-07: editing a field clears stale feedback
+ok 7 - FE-07: editing a field clears stale feedback
+  ---
+  duration_ms: 108.7868
+  ...
+# Subtest: FE-08: shared script tolerates pages without forms
+ok 8 - FE-08: shared script tolerates pages without forms
+  ---
+  duration_ms: 501.8512
+  ...
+(node:33852) ExperimentalWarning: glob is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 25042.989
+# start of coverage report
+# ---------------------------------------------------------------
+# file           | line % | branch % | funcs % | uncovered lines
+# ---------------------------------------------------------------
+# js             |        |          |         | 
+#  demo-forms.js | 100.00 |   100.00 |  100.00 | 
+# ---------------------------------------------------------------
+# all files      | 100.00 |   100.00 |  100.00 | 
+# ---------------------------------------------------------------
+# end of coverage report

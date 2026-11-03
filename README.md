@@ -1,7 +1,9 @@
 # Insurance Workflow — frontend demonstration
 
 Six-page academic demo using Vite, plain HTML, CSS and JavaScript.
-Initial scaffold only: all HTML bodies, shared CSS and shared JS are EMPTY.
+Landing, demo sign-in, dashboard and application form are implemented in this branch.
+The original blank scaffold was preserved in merged PR #13. Applications list
+and staff page remain blank for their later planned implementation.
 There is no backend, real authentication, database or insurance processing.
 Older SRS/SAD/test-plan files remain references, not delivered scope.
 Current scope: docs/frontend-plan.txt; approved dates below supersede its old dates.
@@ -12,11 +14,12 @@ Use Node.js 22.12 or newer. CI uses Node 22.
 
     npm ci
     npm run dev
+    npm run test:coverage
     npm run build
     npm run preview
 
 Open /index.html, /login.html, /dashboard.html, /application.html,
-/applications.html and /staff.html. Initially each page is intentionally blank.
+/applications.html and /staff.html. The last two routes are still intentionally blank.
 Build output must include all six pages. Build success verifies bundling,
 not application features or simulated interactions.
 
@@ -26,6 +29,10 @@ not application features or simulated interactions.
 - Renetta: login.html, dashboard.html, application.html, applications.html.
 - Aswin: staff.html and agreed staff interactions.
 - Raghav: css/style.css, js/main.js and manual frontend checks.
+
+On 2 November, Anuj took over missing Day 3 prerequisites and Day 4–5 work
+(IWM-13 through IWM-20). Original ownership remains above and in Jira history;
+the actual implementation is credited to Anuj. See docs/evidence/2026-11-02.
 
 Coordinate shared-file edits with Raghav. Use only synthetic demo data.
 
@@ -58,3 +65,6 @@ See docs/daily-evidence.md. Freeze estimates at actual sprint start.
 Keep scope changes and reassignment visible. Final charts show genuine
 planned/completed points, burndown, velocity and planned/actual Gantt.
 Never backdate transitions or invent missing observations.
+
+Sprint 1 design, scope deviations and test results:
+[design and validation record](docs/sprint-1-design-and-validation.md).

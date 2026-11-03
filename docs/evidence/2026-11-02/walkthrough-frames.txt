@@ -1,0 +1,9 @@
+file 'dashboard-desktop.jpg'
+duration 15
+file 'dashboard-mobile.jpg'
+duration 15
+file 'application-desktop.jpg'
+duration 15
+file 'application-mobile.jpg'
+duration 15
+file 'application-mobile.jpg'
