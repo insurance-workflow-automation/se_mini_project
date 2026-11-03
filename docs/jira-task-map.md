@@ -2,7 +2,10 @@
 
 Sprint 1 (2–6 November): 19 tasks, 33 provisional points.
 Sprint 2 (9–13 November): 18 tasks, 32 provisional points, including optional Day 8 work.
-Neither sprint has started. Freeze a fresh baseline at the actual start.
+Historical planning snapshot: Sprint 1 subsequently started on 2 November
+at 06:00:30 UTC with 15 tasks and 24 points. Nine setup points were merged before
+the start and excluded. See evidence/2026-11-02/sprint-1-start.json.
+The table preserves original planned ownership; Jira history records takeovers.
 IWM-1 and IWM-5 are completed pre-sprint administration, excluded from velocity.
 
 Existing Sprint 1 setup: IWM-2 access/policy (2), IWM-3 frontend CI (3),

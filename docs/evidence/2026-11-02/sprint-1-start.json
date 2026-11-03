@@ -1,0 +1,372 @@
+{
+  "capturedDate": "2026-11-02",
+  "note": "Original plan 33 points; 9 points completed and merged before actual sprint start excluded. Remaining 24 points include work already in progress today. Capture actual start timestamp from Jira; do not infer 09:00.",
+  "jira": {
+    "data": {
+      "isLast": true,
+      "appliedContentFormat": "markdown",
+      "issues": [
+        {
+          "id": "10064",
+          "key": "IWM-7",
+          "fields": {
+            "summary": "Verify applicant-page local setup",
+            "status": {
+              "name": "To Do",
+              "statusCategory": {
+                "name": "To Do"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:133e0d5d-7379-4c43-92cb-bd61257244d8",
+              "displayName": "Renetta"
+            },
+            "duedate": "2026-11-02",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "10065",
+          "key": "IWM-8",
+          "fields": {
+            "summary": "Verify staff-page local setup",
+            "status": {
+              "name": "To Do",
+              "statusCategory": {
+                "name": "To Do"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:5420fec6-3e18-4fca-bcb1-aa6f623804f1",
+              "displayName": "Aswin Adithiyha"
+            },
+            "duedate": "2026-11-02",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "10066",
+          "key": "IWM-9",
+          "fields": {
+            "summary": "Verify shared assets and local build",
+            "status": {
+              "name": "To Do",
+              "statusCategory": {
+                "name": "To Do"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:45f65cf8-03c5-4944-87ff-aa1d73911605",
+              "displayName": "Raghav Hariharan"
+            },
+            "duedate": "2026-11-02",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "10067",
+          "key": "IWM-10",
+          "fields": {
+            "summary": "Plan applicant pages and navigation",
+            "status": {
+              "name": "To Do",
+              "statusCategory": {
+                "name": "To Do"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:133e0d5d-7379-4c43-92cb-bd61257244d8",
+              "displayName": "Renetta"
+            },
+            "duedate": "2026-11-03",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 2
+              }
+            }
+          }
+        },
+        {
+          "id": "10068",
+          "key": "IWM-11",
+          "fields": {
+            "summary": "Plan staff review screen",
+            "status": {
+              "name": "To Do",
+              "statusCategory": {
+                "name": "To Do"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:5420fec6-3e18-4fca-bcb1-aa6f623804f1",
+              "displayName": "Aswin Adithiyha"
+            },
+            "duedate": "2026-11-03",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "10069",
+          "key": "IWM-12",
+          "fields": {
+            "summary": "Define visual conventions and manual checklist",
+            "status": {
+              "name": "To Do",
+              "statusCategory": {
+                "name": "To Do"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:45f65cf8-03c5-4944-87ff-aa1d73911605",
+              "displayName": "Raghav Hariharan"
+            },
+            "duedate": "2026-11-03",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 2
+              }
+            }
+          }
+        },
+        {
+          "id": "10070",
+          "key": "IWM-13",
+          "fields": {
+            "summary": "Build landing page and demo navigation",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "name": "In Progress"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-04",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 2
+              }
+            }
+          }
+        },
+        {
+          "id": "10071",
+          "key": "IWM-14",
+          "fields": {
+            "summary": "Build demo login page markup",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "name": "In Progress"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-04",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 2
+              }
+            }
+          }
+        },
+        {
+          "id": "10072",
+          "key": "IWM-15",
+          "fields": {
+            "summary": "Add shared CSS base for landing and login",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "name": "In Progress"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-04",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 2
+              }
+            }
+          }
+        },
+        {
+          "id": "10073",
+          "key": "IWM-16",
+          "fields": {
+            "summary": "Build applicant dashboard",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "name": "In Progress"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-05",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 2
+              }
+            }
+          }
+        },
+        {
+          "id": "10074",
+          "key": "IWM-17",
+          "fields": {
+            "summary": "Outline staff page information",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "name": "In Progress"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-05",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "10075",
+          "key": "IWM-18",
+          "fields": {
+            "summary": "Check dashboard layout and keyboard access",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "name": "In Progress"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-05",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "10076",
+          "key": "IWM-19",
+          "fields": {
+            "summary": "Build demo application form",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "name": "In Progress"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-06",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 3
+              }
+            }
+          }
+        },
+        {
+          "id": "10077",
+          "key": "IWM-20",
+          "fields": {
+            "summary": "Check form layout and validation presentation",
+            "status": {
+              "name": "In Progress",
+              "statusCategory": {
+                "name": "In Progress"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-06",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 1
+              }
+            }
+          }
+        },
+        {
+          "id": "10078",
+          "key": "IWM-21",
+          "fields": {
+            "summary": "Review Sprint 1 integration and closeout",
+            "status": {
+              "name": "To Do",
+              "statusCategory": {
+                "name": "To Do"
+              }
+            },
+            "assignee": {
+              "accountId": "712020:b4dd6561-8947-4e98-8e05-3d4b260bc5cc",
+              "displayName": "S Anuj Srijan"
+            },
+            "duedate": "2026-11-06",
+            "customFields": {
+              "Story Points": {
+                "id": "customfield_10035",
+                "value": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

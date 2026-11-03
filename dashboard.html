@@ -3,9 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Workflow</title>
+    <title>Dashboard | Insurance Workflow</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/main.js">
+    </script>
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+    <a class="brand" href="index.html">Insurance Workflow <span>Demo</span>
+    </a>
+      <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="application.html">New application</a>
+    </nav>
+    </header>
+    <main id="main">
+    <p class="eyebrow">Applicant demo</p>
+    <h1>Your dashboard</h1>
+    <p class="intro">Choose a demonstration page. No account information or real applications are shown.</p>
+    <div class="cards">
+    <section class="card">
+    <h2>New application</h2>
+    <p>Try the essential fields in a practice form. Use fictional information only.</p>
+    <a class="button" href="application.html">Start a demo application</a>
+    </section>
+    <section class="card">
+    <h2>My applications</h2>
+    <p>The tracking page is planned for Day 6. This route currently opens an empty scaffold.</p>
+    <a href="applications.html">Open planned applications route</a>
+    </section>
+    </div>
+    <section class="notice" aria-labelledby="demo-status">
+    <h2 id="demo-status">Static demonstration status</h2>
+    <p>No submitted applications. Form entries are not saved, and this status does not update.</p>
+    </section>
+    </main>
+    <footer>Academic frontend demo · No real insurance processing</footer>
+  </body>
 </html>
