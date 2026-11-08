@@ -3,9 +3,147 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Workflow</title>
+    <meta
+      name="description"
+      content="Staff review screen for the Insurance Workflow academic demonstration."
+    >
+    <title>Staff Review | Insurance Workflow</title>
     <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="/js/main.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        Insurance Workflow <span>Demo</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="applications.html">Applications</a>
+        <a href="staff.html" aria-current="page">Staff Review</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <p class="eyebrow">Staff portal · Academic demonstration</p>
+
+      <h1>Application Review</h1>
+
+      <p class="intro">
+        Review the synthetic insurance applications listed below.
+        This page demonstrates how a staff review interface could look.
+      </p>
+
+      <div class="notice" role="note">
+        <strong>Demo only:</strong>
+        All applications and applicant details on this page are fictional.
+        No real insurance application is received, stored, approved or rejected.
+        No staff authorization or backend processing exists.
+      </div>
+
+      <section aria-labelledby="applications-heading">
+        <h2 id="applications-heading">Submitted applications</h2>
+
+        <p>
+          The following records are sample submissions created for
+          demonstration purposes.
+        </p>
+
+        <div class="cards">
+
+          <!-- Application 1 -->
+          <article class="card">
+            <p class="eyebrow">Application reference: DEMO-001</p>
+
+            <h2>Applicant: Arun Kumar</h2>
+
+            <p><strong>Insurance type:</strong> Health</p>
+
+            <p><strong>Contact email:</strong>
+              arun.example@example.com
+            </p>
+
+            <p><strong>Requested amount (INR):</strong> ₹50,000</p>
+
+            <p><strong>Status:</strong> Pending review</p>
+
+            <div aria-label="Illustrative review controls">
+              <button type="button" disabled>View details</button>
+              <button type="button" disabled>Approve</button>
+              <button type="button" disabled>Reject</button>
+            </div>
+          </article>
+
+          <!-- Application 2 -->
+          <article class="card">
+            <p class="eyebrow">Application reference: DEMO-002</p>
+
+            <h2>Applicant: Priya Sharma</h2>
+
+            <p><strong>Insurance type:</strong> Vehicle</p>
+
+            <p><strong>Contact email:</strong>
+              priya.example@example.com
+            </p>
+
+            <p><strong>Requested amount (INR):</strong> ₹2,00,000</p>
+
+            <p><strong>Status:</strong> Approved (demo)</p>
+
+            <div aria-label="Illustrative review controls">
+              <button type="button" disabled>View details</button>
+              <button type="button" disabled>Approve</button>
+              <button type="button" disabled>Reject</button>
+            </div>
+          </article>
+
+          <!-- Application 3 -->
+          <article class="card">
+            <p class="eyebrow">Application reference: DEMO-003</p>
+
+            <h2>Applicant: Rahul Verma</h2>
+
+            <p><strong>Insurance type:</strong> Home</p>
+
+            <p><strong>Contact email:</strong>
+              rahul.example@example.com
+            </p>
+
+            <p><strong>Requested amount (INR):</strong> ₹10,00,000</p>
+
+            <p><strong>Status:</strong> Rejected (demo)</p>
+
+            <div aria-label="Illustrative review controls">
+              <button type="button" disabled>View details</button>
+              <button type="button" disabled>Approve</button>
+              <button type="button" disabled>Reject</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="notice" aria-labelledby="review-note">
+        <h2 id="review-note">About the review controls</h2>
+
+        <p>
+          View details, Approve and Reject are currently illustrative
+          controls and are disabled. Any future approval or rejection
+          behavior will be a browser-only demonstration.
+        </p>
+      </section>
+
+      <p>
+        <a href="dashboard.html">Back to dashboard</a>
+      </p>
+    </main>
+
+    <footer>
+      Academic frontend demonstration · No real insurance processing
+    </footer>
+  </body>
 </html>
