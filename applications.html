@@ -1,11 +1,164 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Workflow</title>
+    <meta name="description" content="View and track insurance applications">
+    <title>My Applications | Insurance Workflow</title>
+
     <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="/js/main.js"></script>
-  </head>
-  <body></body>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="brand">
+            Insurance Workflow
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="application.html">New Application</a>
+            <a href="applications.html" aria-current="page">My Applications</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="page-heading">
+            <p class="eyebrow">Applicant Portal</p>
+            <h1>My Applications</h1>
+            <p>
+                View your insurance applications and check their current
+                processing status.
+            </p>
+        </section>
+
+        <section class="notice" aria-label="Demo information">
+            <p>
+                <strong>Demonstration Mode:</strong>
+                The records displayed below are fictional examples.
+                This page is not connected to a live database or backend.
+            </p>
+        </section>
+
+        <section class="applications-section">
+            <div class="section-heading">
+                <h2>Application History</h2>
+                <a href="application.html" class="button">
+                    + New Application
+                </a>
+            </div>
+
+            <div class="application-list">
+
+                <article class="application-card">
+                    <div class="application-info">
+                        <p class="application-id">APP-DEMO-001</p>
+                        <h3>Health Insurance</h3>
+                        <p>Applicant: Alex Morgan (fictional)</p>
+                        <p>Coverage Amount: ₹5,00,000</p>
+                        <p>Submitted: 20 October 2026</p>
+                    </div>
+
+                    <div class="application-status">
+                        <span class="status under-review">
+                            Under Review
+                        </span>
+                        <p>Illustrative status</p>
+                    </div>
+                </article>
+
+                <article class="application-card">
+                    <div class="application-info">
+                        <p class="application-id">APP-DEMO-002</p>
+                        <h3>Vehicle Insurance</h3>
+                        <p>Applicant: Jordan Lee (fictional)</p>
+                        <p>Coverage Amount: ₹2,50,000</p>
+                        <p>Submitted: 22 October 2026</p>
+                    </div>
+
+                    <div class="application-status">
+                        <span class="status needs-information">
+                            Needs Information
+                        </span>
+                        <p>Illustrative status</p>
+                    </div>
+                </article>
+
+                <article class="application-card">
+                    <div class="application-info">
+                        <p class="application-id">APP-DEMO-003</p>
+                        <h3>Home Insurance</h3>
+                        <p>Applicant: Taylor Reed (fictional)</p>
+                        <p>Coverage Amount: ₹10,00,000</p>
+                        <p>Submitted: 25 October 2026</p>
+                    </div>
+
+                    <div class="application-status">
+                        <span class="status approved">
+                            Approved (Demo)
+                        </span>
+                        <p>Illustrative status</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="status-guide">
+            <h2>Understanding Application Status</h2>
+
+            <div class="status-item">
+                <span class="status under-review">Under Review</span>
+                <p>
+                    The application is awaiting assessment by the
+                    processing team.
+                </p>
+            </div>
+
+            <div class="status-item">
+                <span class="status needs-information">
+                    Needs Information
+                </span>
+                <p>
+                    Additional information or documents may be required.
+                </p>
+            </div>
+
+            <div class="status-item">
+                <span class="status approved">Approved</span>
+                <p>
+                    The application has received an approval decision
+                    in this illustrative workflow.
+                </p>
+            </div>
+
+            <div class="status-item">
+                <span class="status rejected">Rejected</span>
+                <p>
+                    The application has received a rejection decision.
+                </p>
+            </div>
+        </section>
+
+        <section class="back-navigation">
+            <a href="dashboard.html">
+                ← Back to Dashboard
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            Insurance Workflow Automation System |
+            Academic Demonstration Project
+        </p>
+    </footer>
+
+</body>
 </html>
