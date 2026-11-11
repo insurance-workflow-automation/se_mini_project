@@ -105,3 +105,39 @@ test('FE-08: shared script tolerates pages without forms', () => {
     dom.window.close();
   }
 });
+
+
+test('FE-09: staff hooks are isolated per record and safely disabled until shared JS is ready', () => {
+  const dom = page('staff');
+  const doc = dom.window.document;
+  const cards = [...doc.querySelectorAll('[data-demo-review]')];
+  assert.equal(cards.length, 3);
+  assert.equal(new Set(cards.map(card => card.dataset.demoReview)).size, 3);
+  for (const card of cards) {
+    assert.ok(card.querySelector('[data-review-status]').textContent.trim());
+    assert.equal(card.querySelector('[data-review-result]').getAttribute('role'), 'status');
+    assert.equal(card.querySelector('[data-review-result]').getAttribute('aria-live'), 'polite');
+    for (const action of ['approve', 'reject']) {
+      const button = card.querySelector(`[data-review-action="${action}"]`);
+      assert.equal(button.type, 'button');
+      assert.equal(button.disabled, true);
+    }
+  }
+  assert.match(doc.getElementById('review-note-text').textContent, /Nothing will be saved or sent/);
+  dom.window.close();
+});
+
+test('FE-10: applicant confirmation is announced and a fresh page does not retain it', () => {
+  const dom = page('application');
+  attachDemoForms(dom.window.document);
+  const result = dom.window.document.querySelector('[data-result]');
+  assert.equal(result.getAttribute('role'), 'status');
+  assert.equal(result.getAttribute('aria-live'), 'polite');
+  dom.window.document.querySelector('form').dispatchEvent(new dom.window.Event('submit', {cancelable: true}));
+  assert.match(result.textContent, /Nothing was sent or saved/);
+  const fresh = page('application');
+  assert.equal(fresh.window.document.querySelector('[data-result]').textContent, '');
+  assert.equal(fresh.window.localStorage.length, 0);
+  fresh.window.close();
+  dom.window.close();
+});
