@@ -56,7 +56,7 @@
         <div class="cards">
 
           <!-- Application 1 -->
-          <article class="card">
+          <article class="card" data-demo-review="DEMO-001">
             <p class="eyebrow">Application reference: DEMO-001</p>
 
             <h2>Applicant: Arun Kumar</h2>
@@ -69,17 +69,19 @@
 
             <p><strong>Requested amount (INR):</strong> ₹50,000</p>
 
-            <p><strong>Status:</strong> Pending review</p>
+            <p><strong>Status:</strong> <span data-review-status>Pending review</span></p>
 
-            <div aria-label="Illustrative review controls">
+            <p data-review-result role="status" aria-live="polite" aria-atomic="true"></p>
+
+            <div aria-label="Illustrative review controls" aria-describedby="review-note-text">
               <button type="button" disabled>View details</button>
-              <button type="button" disabled>Approve</button>
-              <button type="button" disabled>Reject</button>
+              <button type="button" data-review-action="approve" disabled>Approve</button>
+              <button type="button" data-review-action="reject" disabled>Reject</button>
             </div>
           </article>
 
           <!-- Application 2 -->
-          <article class="card">
+          <article class="card" data-demo-review="DEMO-002">
             <p class="eyebrow">Application reference: DEMO-002</p>
 
             <h2>Applicant: Priya Sharma</h2>
@@ -92,17 +94,19 @@
 
             <p><strong>Requested amount (INR):</strong> ₹2,00,000</p>
 
-            <p><strong>Status:</strong> Approved (demo)</p>
+            <p><strong>Status:</strong> <span data-review-status>Approved (demo)</span></p>
 
-            <div aria-label="Illustrative review controls">
+            <p data-review-result role="status" aria-live="polite" aria-atomic="true"></p>
+
+            <div aria-label="Illustrative review controls" aria-describedby="review-note-text">
               <button type="button" disabled>View details</button>
-              <button type="button" disabled>Approve</button>
-              <button type="button" disabled>Reject</button>
+              <button type="button" data-review-action="approve" disabled>Approve</button>
+              <button type="button" data-review-action="reject" disabled>Reject</button>
             </div>
           </article>
 
           <!-- Application 3 -->
-          <article class="card">
+          <article class="card" data-demo-review="DEMO-003">
             <p class="eyebrow">Application reference: DEMO-003</p>
 
             <h2>Applicant: Rahul Verma</h2>
@@ -115,12 +119,14 @@
 
             <p><strong>Requested amount (INR):</strong> ₹10,00,000</p>
 
-            <p><strong>Status:</strong> Rejected (demo)</p>
+            <p><strong>Status:</strong> <span data-review-status>Rejected (demo)</span></p>
 
-            <div aria-label="Illustrative review controls">
+            <p data-review-result role="status" aria-live="polite" aria-atomic="true"></p>
+
+            <div aria-label="Illustrative review controls" aria-describedby="review-note-text">
               <button type="button" disabled>View details</button>
-              <button type="button" disabled>Approve</button>
-              <button type="button" disabled>Reject</button>
+              <button type="button" data-review-action="approve" disabled>Approve</button>
+              <button type="button" data-review-action="reject" disabled>Reject</button>
             </div>
           </article>
 
@@ -130,10 +136,11 @@
       <section class="notice" aria-labelledby="review-note">
         <h2 id="review-note">About the review controls</h2>
 
-        <p>
-          View details, Approve and Reject are currently illustrative
-          controls and are disabled. Any future approval or rejection
-          behavior will be a browser-only demonstration.
+        <p id="review-note-text">
+          These controls are currently disabled. When the optional demo script
+          is ready, Approve and Reject will change only this page's sample status.
+          Nothing will be saved or sent. Refresh will restore the sample statuses;
+          the applicant list will not change. View details remains illustrative.
         </p>
       </section>
 
