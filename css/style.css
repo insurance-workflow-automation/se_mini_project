@@ -437,3 +437,39 @@ footer { max-width: 1040px; margin: 3rem auto 1rem; padding: 1.25rem; border-top
         padding: 1rem;
     }
 }
+/* =========================================
+   IWM-27: STAFF REVIEW ACCESSIBILITY
+========================================= */
+
+[data-demo-review] {
+    min-width: 0;
+}
+
+[data-demo-review] button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+[data-demo-review] button:focus-visible {
+    outline: 3px solid #b34500;
+    outline-offset: 4px;
+}
+
+[data-demo-review] p {
+    overflow-wrap: anywhere;
+}
+
+[data-demo-review] [data-review-status] {
+    font-weight: 650;
+}
+
+@media (max-width: 600px) {
+    [data-demo-review] {
+        padding: 1rem;
+    }
+
+    [data-demo-review] button {
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
