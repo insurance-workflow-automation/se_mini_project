@@ -284,3 +284,156 @@ footer { max-width: 1040px; margin: 3rem auto 1rem; padding: 1.25rem; border-top
     }
 }
 
+/* =========================================
+   IWM-24: APPLICATIONS LIST IMPROVEMENTS
+========================================= */
+
+/* Applications section heading */
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.section-heading h2 {
+    margin: 0;
+}
+
+/* Application list */
+.application-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Individual application cards */
+.application-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid #cbd5db;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.application-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.application-info h3 {
+    margin: 0.5rem 0 0.75rem;
+}
+
+.application-info p {
+    margin: 0.5rem 0;
+    color: #435963;
+    overflow-wrap: anywhere;
+}
+
+.application-info .application-id {
+    color: #075d70;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.application-status {
+    flex-shrink: 0;
+    min-width: 150px;
+    text-align: right;
+}
+
+.application-status p {
+    margin: 0.6rem 0 0;
+    color: #435963;
+    font-size: 0.85rem;
+}
+
+/* Application status guide */
+.status-guide {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid #cbd5db;
+    border-radius: 0.6rem;
+}
+
+.status-guide h2 {
+    margin-bottom: 1rem;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #e5eaed;
+}
+
+.status-item:last-child {
+    border-bottom: none;
+}
+
+.status-item p {
+    flex: 1;
+    min-width: 200px;
+    margin: 0;
+    color: #435963;
+}
+
+/* Back navigation */
+.back-navigation {
+    margin: 1.5rem 0;
+}
+
+.back-navigation a {
+    font-weight: 600;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .section-heading .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .application-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.1rem;
+        gap: 1rem;
+    }
+
+    .application-status {
+        width: 100%;
+        min-width: 0;
+        text-align: left;
+        padding-top: 0.75rem;
+        border-top: 1px solid #e5eaed;
+    }
+
+    .status-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .status-item p {
+        min-width: 0;
+    }
+
+    .status-guide {
+        padding: 1rem;
+    }
+}
