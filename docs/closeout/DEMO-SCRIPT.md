@@ -6,4 +6,6 @@
 1:05–1:30: Staff page. Approve one card and reject another. Show isolated statuses and live announcements. Refresh restores fixtures; applicant list does not synchronize.
 1:30–2:00: Show PR reviews/CI and sprint charts. Sprint 1 24/24 points; Sprint 2 16/32 at original deadline. Explain early start and late closeout without backdating.
 
-The included two-minute MP4 is a screenshot walkthrough of actual browser captures, not a live screen recording or evidence that teammates presented. Record a live narrated demo if required by the assessor. Presentation participation remains unverified.
+Final update: PR38 is merged and both sprints are closed. Sprint 2 final closeout is 26/32 points; the remaining six presentation points are incomplete in backlog. The team confirmed it has not presented yet.
+
+The included two-minute MP4 is a screenshot walkthrough of actual browser captures, not a live screen recording or evidence that teammates presented. Record a live narrated demo if required by the assessor.

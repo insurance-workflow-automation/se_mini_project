@@ -1,0 +1,34 @@
+﻿key,summary,sprint,points,due,done,started,status
+IWM-7,Verify applicant-page local setup,1,1,2026-11-02,2026-11-05T08:23:20.486000+05:30,,Done
+IWM-8,Verify staff-page local setup,1,1,2026-11-02,2026-11-05T08:23:23.516000+05:30,,Done
+IWM-9,Verify shared assets and local build,1,1,2026-11-02,2026-11-05T08:23:27.228000+05:30,,Done
+IWM-10,Plan applicant pages and navigation,1,2,2026-11-03,2026-11-05T08:20:29.792000+05:30,2026-11-03T19:30:28.033000+05:30,Done
+IWM-11,Plan staff review screen,1,1,2026-11-03,2026-11-05T08:20:33.029000+05:30,2026-11-03T19:30:34.160000+05:30,Done
+IWM-12,Define visual conventions and manual checklist,1,2,2026-11-03,2026-11-05T08:20:36.971000+05:30,2026-11-03T19:30:39.396000+05:30,Done
+IWM-13,Build landing page and demo navigation,1,2,2026-11-04,2026-11-05T08:20:39.823000+05:30,2026-11-02T11:25:20.178000+05:30,Done
+IWM-14,Build demo login page markup,1,2,2026-11-04,2026-11-05T08:20:43.115000+05:30,2026-11-02T11:25:24.064000+05:30,Done
+IWM-15,Add shared CSS base for landing and login,1,2,2026-11-04,2026-11-05T08:20:45.900000+05:30,2026-11-02T11:25:27.949000+05:30,Done
+IWM-16,Build applicant dashboard,1,2,2026-11-05,2026-11-05T08:20:49.095000+05:30,2026-11-02T11:25:31.816000+05:30,Done
+IWM-17,Outline staff page information,1,1,2026-11-05,2026-11-08T19:19:33.719000+05:30,2026-11-02T11:25:35.530000+05:30,Done
+IWM-18,Check dashboard layout and keyboard access,1,1,2026-11-05,2026-11-05T08:20:55.816000+05:30,2026-11-02T11:25:39.083000+05:30,Done
+IWM-19,Build demo application form,1,3,2026-11-06,2026-11-05T08:20:58.688000+05:30,2026-11-02T11:25:42.340000+05:30,Done
+IWM-20,Check form layout and validation presentation,1,1,2026-11-06,2026-11-05T08:21:01.635000+05:30,2026-11-02T11:25:46.209000+05:30,Done
+IWM-21,Review Sprint 1 integration and closeout,1,2,2026-11-06,2026-11-05T08:27:01.292000+05:30,2026-11-05T08:23:28.958000+05:30,Done
+IWM-22,Build My Applications demo list,2,3,2026-11-09,2026-11-07T17:07:24.514000+05:30,,Done
+IWM-23,Choose and document frontend demo state,2,1,2026-11-09,2026-11-07T17:07:50.444000+05:30,,Done
+IWM-24,Style and check applications list,2,1,2026-11-09,2026-11-11T10:46:03.766000+05:30,,Done
+IWM-25,Build staff review demo page,2,3,2026-11-10,2026-11-08T20:08:29.224000+05:30,,Done
+IWM-26,Fix applicant cross-page links,2,1,2026-11-10,2026-11-11T11:10:59.953000+05:30,,Done
+IWM-27,Check staff styling and accessibility,2,1,2026-11-10,2026-11-11T11:26:39.293000+05:30,,Done
+IWM-28,Decide optional demo behavior scope,2,1,2026-11-11,2026-11-08T20:08:30.671000+05:30,,Done
+IWM-29,Implement optional coordinated browser-only interactions,2,3,2026-11-11,2026-11-15T10:40:29.502000+05:30,,Done
+IWM-30,Coordinate optional applicant confirmation UI,2,1,2026-11-11,2026-11-11T10:57:36.030000+05:30,2026-11-11T10:52:06.021000+05:30,Done
+IWM-31,Coordinate optional staff status interactions,2,1,2026-11-11,2026-11-11T10:57:38.474000+05:30,2026-11-11T10:52:07.327000+05:30,Done
+IWM-32,Integrate and review six-page frontend,2,3,2026-11-12,2026-11-12T16:17:39.495000+05:30,2026-11-08T20:08:32.597000+05:30,Done
+IWM-33,Verify and fix integrated applicant pages,2,2,2026-11-12,2026-11-15T15:58:44.361000+05:30,2026-11-15T10:45:34.986000+05:30,Done
+IWM-34,Verify and fix integrated staff page,2,2,2026-11-12,2026-11-15T15:58:46.669000+05:30,2026-11-15T10:45:37.099000+05:30,Done
+IWM-35,Execute six-page manual test checklist,2,3,2026-11-12,2026-11-15T10:40:31.306000+05:30,,Done
+IWM-36,"Present demo, sprint charts and planned/actual Gantt",2,3,2026-11-13,,2026-11-15T10:45:38.992000+05:30,In Progress
+IWM-37,Demonstrate applicant frontend,2,1,2026-11-13,,,To Do
+IWM-38,Demonstrate staff frontend,2,1,2026-11-13,,,To Do
+IWM-39,Present test evidence and verify README,2,1,2026-11-13,,2026-11-15T10:45:40.967000+05:30,In Progress

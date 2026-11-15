@@ -1,0 +1,13 @@
+file 'index.png'
+duration 20
+file 'login.png'
+duration 20
+file 'dashboard.png'
+duration 20
+file 'application.png'
+duration 20
+file 'applications.png'
+duration 20
+file 'staff-actions.png'
+duration 20
+file 'staff-actions.png'

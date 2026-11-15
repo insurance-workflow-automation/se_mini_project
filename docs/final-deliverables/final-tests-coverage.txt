@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: FE-01: all internal links in delivered pages resolve to repository pages or anchors
+ok 1 - FE-01: all internal links in delivered pages resolve to repository pages or anchors
+  ---
+  duration_ms: 614.5431
+  ...
+# Subtest: FE-02: application fields are labelled and required
+ok 2 - FE-02: application fields are labelled and required
+  ---
+  duration_ms: 20.4713
+  ...
+# Subtest: FE-03: email validity rejects malformed input and accepts demo email
+ok 3 - FE-03: email validity rejects malformed input and accepts demo email
+  ---
+  duration_ms: 11.3787
+  ...
+# Subtest: FE-04: amount rejects zero, negative and fractional values
+ok 4 - FE-04: amount rejects zero, negative and fractional values
+  ---
+  duration_ms: 12.8134
+  ...
+# Subtest: FE-05: valid application submit is cancelled with an honest non-persistence notice
+ok 5 - FE-05: valid application submit is cancelled with an honest non-persistence notice
+  ---
+  duration_ms: 15.8669
+  ...
+# Subtest: FE-06: login does not authenticate or echo entered credentials
+ok 6 - FE-06: login does not authenticate or echo entered credentials
+  ---
+  duration_ms: 10.7917
+  ...
+# Subtest: FE-07: editing a field clears stale feedback
+ok 7 - FE-07: editing a field clears stale feedback
+  ---
+  duration_ms: 17.2991
+  ...
+# Subtest: FE-08: shared script tolerates pages without forms
+ok 8 - FE-08: shared script tolerates pages without forms
+  ---
+  duration_ms: 59.9518
+  ...
+# Subtest: FE-09: staff actions work independently and reset without persistence
+ok 9 - FE-09: staff actions work independently and reset without persistence
+  ---
+  duration_ms: 37.5543
+  ...
+# Subtest: FE-10: applicant confirmation is announced and a fresh page does not retain it
+ok 10 - FE-10: applicant confirmation is announced and a fresh page does not retain it
+  ---
+  duration_ms: 26.6447
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3257.849
+# start of coverage report
+# ---------------------------------------------------------------
+# file           | line % | branch % | funcs % | uncovered lines
+# ---------------------------------------------------------------
+# js             |        |          |         | 
+#  demo-forms.js | 100.00 |    87.50 |  100.00 | 
+# ---------------------------------------------------------------
+# all files      | 100.00 |    87.50 |  100.00 | 
+# ---------------------------------------------------------------
+# end of coverage report
