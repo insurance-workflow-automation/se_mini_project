@@ -1,9 +1,8 @@
 # Insurance Workflow — frontend demonstration
 
 Six-page academic demo using Vite, plain HTML, CSS and JavaScript.
-Landing, demo sign-in, dashboard and application form are implemented in this branch.
-The original blank scaffold was preserved in merged PR #13. Applications list
-and staff page remain blank for their later planned implementation.
+All six pages are implemented. Applicant forms show no-save confirmations; staff actions update only the selected card and reset on refresh.
+The original blank scaffold was preserved in merged PR #13.
 There is no backend, real authentication, database or insurance processing.
 Older SRS/SAD/test-plan files remain references, not delivered scope.
 Current scope: docs/frontend-plan.txt; approved dates below supersede its old dates.
@@ -19,7 +18,7 @@ Use Node.js 22.12 or newer. CI uses Node 22.
     npm run preview
 
 Open /index.html, /login.html, /dashboard.html, /application.html,
-/applications.html and /staff.html. The last two routes are still intentionally blank.
+/applications.html and /staff.html. All six routes contain demo content.
 Build output must include all six pages. Build success verifies bundling,
 not application features or simulated interactions.
 
@@ -57,6 +56,7 @@ Sprint 1: 2–6 November 2026, Days 1–5: setup, page plans, landing/login,
 dashboard, application form.
 Sprint 2: 9–13 November 2026, Days 6–10: applications list, staff demo,
 optional browser-only JS, integration and final presentation.
+Sprint 2 actually started early on 7 November. Late closeout work on 15 November is reported separately from the original 13 November deadline.
 No mandatory weekend work. Record setup before sprint start as pre-sprint work.
 
 ## Evidence and charts
