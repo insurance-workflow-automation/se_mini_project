@@ -68,3 +68,11 @@ Never backdate transitions or invent missing observations.
 
 Sprint 1 design, scope deviations and test results:
 [design and validation record](docs/sprint-1-design-and-validation.md).
+
+## Final delivery and presentation (15 November 2026)
+
+The frozen application baseline is `eb232fb0ff13fb5d2fc197b8b5d8526e01c7723b` (PR #38, independently approved by Renetta). Both Jira sprints are closed; the four presentation tasks remain incomplete in backlog because the team has not presented yet.
+
+Start with [the delivery guide](docs/final-deliverables/START-HERE.md), [presentation PDF](docs/final-deliverables/Presentation-and-Speaking-Guide.pdf), and [final SRS/SAD/Test Plan](docs/final-deliverables/Final-SRS-SAD-Test-Plan.pdf). The final PDF reconciles this frontend-only release with the original October DOCX proposal; it does not claim delivery of the proposed backend or formal IEEE certification. Documentation acceptance remains subject to review.
+
+[Chart provenance](docs/final-deliverables/CHART-NOTES.md) distinguishes original-deadline completion (24/24 and 16/32 points) from late Sprint 2 closeout (26/32). Six presentation points are still incomplete. The 60-second and approximately 120-second videos are screenshot walkthroughs, not proof of a live team presentation.
