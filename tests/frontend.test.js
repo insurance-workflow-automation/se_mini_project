@@ -9,7 +9,7 @@ const page = (name) => new JSDOM(readFileSync(new URL('../' + name + '.html', im
   { url: 'https://demo.example/' + name + '.html' });
 
 test('FE-01: all internal links in delivered pages resolve to repository pages or anchors', () => {
-  for (const name of ['index', 'login', 'dashboard', 'application']) {
+  for (const name of ['index', 'login', 'dashboard', 'application', 'applications', 'staff']) {
     const dom = page(name);
     for (const a of dom.window.document.querySelectorAll('a[href]')) {
       const href = a.getAttribute('href');
@@ -162,12 +162,12 @@ test('FE-09: staff actions work independently and reset without persistence', ()
   // Other applications must remain unchanged.
   assert.equal(
     cards[1].querySelector('[data-review-status]').textContent.trim(),
-    'Approved (demo)'
+    'Needs Information'
   );
 
   assert.equal(
     cards[2].querySelector('[data-review-status]').textContent.trim(),
-    'Rejected (demo)'
+    'Approved (Demo)'
   );
 
   // Reject only the second application.
@@ -200,7 +200,7 @@ test('FE-09: staff actions work independently and reset without persistence', ()
   assert.equal(
     fresh.window.document.querySelectorAll('[data-demo-review]')[0]
       .querySelector('[data-review-status]').textContent.trim(),
-    'Pending review'
+    'Under Review'
   );
 
   assert.equal(fresh.window.localStorage.length, 0);
