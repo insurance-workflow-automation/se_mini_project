@@ -107,25 +107,107 @@ test('FE-08: shared script tolerates pages without forms', () => {
 });
 
 
-test('FE-09: staff hooks are isolated per record and safely disabled until shared JS is ready', () => {
+
+test('FE-09: staff actions work independently and reset without persistence', () => {
   const dom = page('staff');
   const doc = dom.window.document;
+
   const cards = [...doc.querySelectorAll('[data-demo-review]')];
+
   assert.equal(cards.length, 3);
   assert.equal(new Set(cards.map(card => card.dataset.demoReview)).size, 3);
+
+  // Controls must initially be disabled.
   for (const card of cards) {
-    assert.ok(card.querySelector('[data-review-status]').textContent.trim());
-    assert.equal(card.querySelector('[data-review-result]').getAttribute('role'), 'status');
-    assert.equal(card.querySelector('[data-review-result]').getAttribute('aria-live'), 'polite');
     for (const action of ['approve', 'reject']) {
-      const button = card.querySelector(`[data-review-action="${action}"]`);
-      assert.equal(button.type, 'button');
-      assert.equal(button.disabled, true);
+      assert.equal(
+        card.querySelector(`[data-review-action="${action}"]`).disabled,
+        true
+      );
     }
   }
-  assert.match(doc.getElementById('review-note-text').textContent, /Nothing will be saved or sent/);
+
+  // Attach the shared behaviour.
+  attachDemoForms(doc);
+
+  // All action buttons should now be enabled.
+  for (const card of cards) {
+    for (const action of ['approve', 'reject']) {
+      assert.equal(
+        card.querySelector(`[data-review-action="${action}"]`).disabled,
+        false
+      );
+    }
+
+    assert.equal(card.querySelector('[data-review-result]').getAttribute('role'), 'status');
+    assert.equal(card.querySelector('[data-review-result]').getAttribute('aria-live'), 'polite');
+
+    // View details must remain disabled.
+    assert.equal(card.querySelector('button:not([data-review-action])').disabled, true);
+  }
+
+  // Approve only the first application.
+  cards[0].querySelector('[data-review-action="approve"]').click();
+
+  assert.equal(
+    cards[0].querySelector('[data-review-status]').textContent.trim(),
+    'Approved (Demo)'
+  );
+
+  assert.match(
+    cards[0].querySelector('[data-review-result]').textContent,
+    /Approved \(Demo\).*Nothing was saved or sent/
+  );
+
+  // Other applications must remain unchanged.
+  assert.equal(
+    cards[1].querySelector('[data-review-status]').textContent.trim(),
+    'Approved (demo)'
+  );
+
+  assert.equal(
+    cards[2].querySelector('[data-review-status]').textContent.trim(),
+    'Rejected (demo)'
+  );
+
+  // Reject only the second application.
+  cards[1].querySelector('[data-review-action="reject"]').click();
+
+  assert.equal(
+    cards[1].querySelector('[data-review-status]').textContent.trim(),
+    'Rejected (Demo)'
+  );
+
+  // First application's status must remain unchanged.
+  assert.equal(
+    cards[0].querySelector('[data-review-status]').textContent.trim(),
+    'Approved (Demo)'
+  );
+
+  // No persistence.
+  assert.equal(dom.window.localStorage.length, 0);
+
+  assert.match(
+    doc.getElementById('review-note-text').textContent,
+    /Refresh restores the original sample statuses/
+  );
+
   dom.window.close();
+
+  // A fresh document restores the original fixtures.
+  const fresh = page('staff');
+
+  assert.equal(
+    fresh.window.document.querySelectorAll('[data-demo-review]')[0]
+      .querySelector('[data-review-status]').textContent.trim(),
+    'Pending review'
+  );
+
+  assert.equal(fresh.window.localStorage.length, 0);
+
+  fresh.window.close();
 });
+
 
 test('FE-10: applicant confirmation is announced and a fresh page does not retain it', () => {
   const dom = page('application');
